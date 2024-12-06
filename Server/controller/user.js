@@ -1,6 +1,6 @@
 import jwt from 'jsonwebtoken';
 import { UserModel as User } from '../models/user.js';
-const JWT_SECRRET = process.env.JWT_SECRRET
+
 export const userController = {
 
     registerUser: async (req, res) => {

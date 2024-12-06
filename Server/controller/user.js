@@ -8,7 +8,7 @@ export const userController = {
         try {
             const user = new User({ username, password });
             await user.save();
-            const token = jwt.sign({ id: user._id }, 'arpit871');
+            const token = jwt.sign({ id: user._id }, 'sachinnagar');
             res.status(201).json({ token });
         } catch (error) {
             console.log(error)
